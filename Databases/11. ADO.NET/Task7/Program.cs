@@ -8,7 +8,7 @@ namespace Task7
         public static void Main(string[] args)
         {
             // Implement appending new rows to the Excel file.
-            var connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\\..\\scores.xlsx; Extended Properties = \"Excel 12.0 Xml;HDR=YES\"";
+            var connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\\..\\..\\Task6\\scores.xlsx; Extended Properties = \"Excel 12.0 Xml;HDR=YES\"";
             OleDbConnection connection = new OleDbConnection(connectionString);
 
             connection.Open();
@@ -29,6 +29,5 @@ namespace Task7
                 Console.WriteLine("Run it and then check the Excel file :)");
             }
         }
-    }
     }
 }

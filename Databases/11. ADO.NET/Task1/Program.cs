@@ -10,7 +10,7 @@ namespace Task1
             // Write a program that retrieves from the Northwind sample database in MS SQL Server the number of rows in the Categories table.
 
             // If this connectionString doesn't work, try "Server=.\\SQLEXPRESS;Database=Northwind; Integrated Security=true"
-            // or whatever works for you.
+            // or whatever works for you. Oh and it sometimes throws at the very first build, so try it twice.
             var connectionString = "Server=.;Database=Northwind;Integrated Security=true";
             SqlConnection connection = new SqlConnection(connectionString);
 
