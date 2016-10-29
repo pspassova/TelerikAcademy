@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Linq;
 
-namespace Task1
+namespace Task._1
 {
     // Using the Visual Studio Entity Framework designer create a DbContext for the Northwind database.
     // 
     // This should be in all of the projects' App.config files:
     // 
     //    <connectionStrings>
-    //  <add name = "NorthwindEntities" connectionString="metadata=res://*/NorthwindModel.csdl|res://*/NorthwindModel.ssdl|res://*/ NorthwindModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=Northwind;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
-    //   </connectionStrings>
+    //  <add name = "NorthwindEntities" connectionString="metadata=res://*/NorthwindEntities.csdl|res://*/NorthwindEntities.ssdl|res://*/NorthwindEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=Northwind;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    //</connectionStrings>
+
     public class StartUp
     {
         public static void Main()

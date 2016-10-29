@@ -60,8 +60,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Northwindy\Task.1.csproj">
-      <Project>{f790d8d6-9f22-4576-927c-99d080ec178a}</Project>
+    <ProjectReference Include="..\Task.1\Task.1.csproj">
+      <Project>{806ef4a7-a28e-47e9-a60c-190390201c5e}</Project>
       <Name>Task.1</Name>
     </ProjectReference>
   </ItemGroup>

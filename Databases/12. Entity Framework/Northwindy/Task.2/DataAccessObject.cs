@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Data.Entity.Migrations;
-using Task1;
+using Task._1;
 
 namespace Task._2
 {

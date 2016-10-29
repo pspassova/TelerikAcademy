@@ -1,5 +1,5 @@
 ﻿using System;
-using Task1;
+using Task._1;
 
 namespace Task._6
 {
