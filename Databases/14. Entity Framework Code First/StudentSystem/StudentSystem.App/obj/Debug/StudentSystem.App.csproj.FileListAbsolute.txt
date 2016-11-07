@@ -1,0 +1,1 @@
+D:\pStuff\Telerik Academy\TelerikAcademy\Databases\14. Entity Framework Code First\StudentSystem\StudentSystem.App\bin\Debug\StudentSystem.App.exe.config
