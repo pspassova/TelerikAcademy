@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Election", "Election\Election.csproj", "{7A2E997C-F567-45FF-8C41-876DDDB3D336}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{858DD00B-ECC0-4B47-8068-178DD0CA21F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Towns", "Towns\Towns.csproj", "{C5D8EF17-C710-4364-8C7B-C9658D6217B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7A2E997C-F567-45FF-8C41-876DDDB3D336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A2E997C-F567-45FF-8C41-876DDDB3D336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A2E997C-F567-45FF-8C41-876DDDB3D336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858DD00B-ECC0-4B47-8068-178DD0CA21F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858DD00B-ECC0-4B47-8068-178DD0CA21F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858DD00B-ECC0-4B47-8068-178DD0CA21F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858DD00B-ECC0-4B47-8068-178DD0CA21F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D8EF17-C710-4364-8C7B-C9658D6217B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D8EF17-C710-4364-8C7B-C9658D6217B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D8EF17-C710-4364-8C7B-C9658D6217B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D8EF17-C710-4364-8C7B-C9658D6217B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

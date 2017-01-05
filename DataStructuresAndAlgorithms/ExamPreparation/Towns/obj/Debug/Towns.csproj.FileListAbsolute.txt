@@ -1,0 +1,6 @@
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Towns\bin\Debug\Towns.exe.config
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Towns\bin\Debug\Towns.exe
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Towns\bin\Debug\Towns.pdb
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Towns\obj\Debug\Towns.csprojResolveAssemblyReference.cache
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Towns\obj\Debug\Towns.exe
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Towns\obj\Debug\Towns.pdb

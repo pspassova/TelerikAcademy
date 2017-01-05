@@ -1,0 +1,6 @@
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Election\bin\Debug\Election.exe.config
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Election\bin\Debug\Election.exe
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Election\bin\Debug\Election.pdb
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Election\obj\Debug\Election.csprojResolveAssemblyReference.cache
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Election\obj\Debug\Election.exe
+D:\pStuff\Telerik Academy\TelerikAcademy\DataStructuresAndAlgorithms\ExamPreparation\Election\obj\Debug\Election.pdb
