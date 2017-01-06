@@ -26,7 +26,7 @@ namespace Election
         {
             BigInteger[] combinations = new BigInteger[partiesSeats.Sum() + 1];
 
-            combinations[0] = 1; // base
+            combinations[0] = 1; 
 
             foreach (int partySeats in partiesSeats)
             {
