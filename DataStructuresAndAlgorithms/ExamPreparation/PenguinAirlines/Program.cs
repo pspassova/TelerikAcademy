@@ -30,6 +30,17 @@ namespace PenguinAirlines
                 }
             }
 
+            int[] componentsId = new int[islandsCount];
+            bool[] visited = new bool[islandsCount];
+
+            for (int i = 0; i < islandsCount; i++)
+            {
+                if (!visited[i])
+                {
+                    Dfs(i, adjacencyList, visited, i, componentsId);
+                }
+            }
+
             while (true)
             {
                 string line = Console.ReadLine();
@@ -51,10 +62,6 @@ namespace PenguinAirlines
 
                 else
                 {
-                    bool[] visited = new bool[islandsCount];
-
-                    Dfs(firstIslandIndex, adjacencyList, visited);
-
                     if (visited[secondIslandIndex])
                     {
                         Console.WriteLine(ThereIsntADirectFlightMessage);
@@ -68,15 +75,16 @@ namespace PenguinAirlines
             }
         }
 
-        private static void Dfs(int firstIslandIndex, List<int>[] adjacencyList, bool[] visited)
+        private static void Dfs(int firstIslandIndex, List<int>[] adjacencyList, bool[] visited, int id, int[] componentsId)
         {
             visited[firstIslandIndex] = true;
+            componentsId[firstIslandIndex] = id;
 
             foreach (var successor in adjacencyList[firstIslandIndex])
             {
                 if (!visited[successor])
                 {
-                    Dfs(successor, adjacencyList, visited);
+                    Dfs(successor, adjacencyList, visited, id, componentsId);
                 }
             }
         }
