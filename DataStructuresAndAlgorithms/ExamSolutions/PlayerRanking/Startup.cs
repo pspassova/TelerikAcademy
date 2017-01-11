@@ -9,7 +9,7 @@ namespace PlayerRanking
 {
     public class Startup
     {
-        private static SortedDictionary<string, SortedSet<Player>> playersSortedByType = new SortedDictionary<string, SortedSet<Player>>();
+        private static IDictionary<string, SortedSet<Player>> playersSortedByType = new Dictionary<string, SortedSet<Player>>();
         private static BigList<Player> players = new BigList<Player>();
 
         private const string RanklistCommand = "ranklist";
@@ -19,7 +19,7 @@ namespace PlayerRanking
 
         public static void Main()
         {
-            List<int[]> commands = new List<int[]>();
+            int[] commands = new int[5];
 
             while (true)
             {
@@ -38,7 +38,7 @@ namespace PlayerRanking
                         HandleAddCommand(command);
                         break;
                     case EndCommand:
-                        break;
+                        return;
                     default:
                         break;
                 }
@@ -57,7 +57,7 @@ namespace PlayerRanking
             bool typeIsFound = playersSortedByType.ContainsKey(type);
             if (!typeIsFound)
             {
-                playersSortedByType.Add(type, new SortedSet<Player>(new PlayerComparer()));
+                playersSortedByType.Add(type, new SortedSet<Player>());
             }
 
             if (playersSortedByType[type].Contains(player))
@@ -76,7 +76,7 @@ namespace PlayerRanking
                 players.Insert(position, player);
             }
 
-            Console.WriteLine("Added player {0} to position {1}", player.Name, player.Position);
+            Console.WriteLine("Added player {0} to position {1}", player.Name, player.Position + 1);
         }
 
         private static void HandleFindCommand(string[] command)
@@ -126,7 +126,7 @@ namespace PlayerRanking
         }
     }
 
-    public class Player
+    public class Player : IComparable<Player>
     {
         public Player(string name, string type, int age, int position)
         {
@@ -156,59 +156,17 @@ namespace PlayerRanking
             get; set;
         }
 
-        // Resourse--http://stackoverflow.com/questions/371328/why-is-it-important-to-override-gethashcode-when-equals-method-is-overridden
-        public override int GetHashCode()
+        public int CompareTo(Player other)
         {
-            const int multiplier = 397;
+            int comparedByName = this.Name.CompareTo(other.Name.ToLower());
+            int comparedByAge = other.Age.CompareTo(this.Age);
 
-            unchecked
-            {
-                var hash = 0;
-
-                hash = (hash * multiplier) ^ (dynamic)this.Name;
-                hash = (hash * multiplier) ^ (dynamic)this.Type;
-                hash = (hash * multiplier) ^ (dynamic)this.Age;
-                hash = (hash * multiplier) ^ (dynamic)this.Position;
-
-                return hash;
-            }
-        }
-
-        public override bool Equals(object obj)
-        {
-            var other = obj as Player;
-            if (other == null)
-            {
-                return false;
-            }
-
-            bool equalsName = this.Name == other.Name;
-            bool equalsType = this.Type == other.Type;
-            bool equalsAge = this.Age == other.Age;
-            bool equalsPosition = this.Position == other.Position;
-
-            return equalsName && equalsType && equalsAge && equalsPosition;
+            return comparedByName != 0 ? comparedByName : comparedByAge;
         }
 
         public override string ToString()
         {
             return string.Format("{0}({1})", this.Name, this.Age);
-        }
-    }
-
-    public class PlayerComparer : IComparer<Player>
-    {
-        public int Compare(Player firstPlayer, Player secondPlayer)
-        {
-            int nameComparer = firstPlayer.Name.ToLower().CompareTo(secondPlayer.Name.ToLower());
-            if (nameComparer == 0)
-            {
-                return firstPlayer.Age - secondPlayer.Age;
-            }
-            else
-            {
-                return nameComparer;
-            }
         }
     }
 }
