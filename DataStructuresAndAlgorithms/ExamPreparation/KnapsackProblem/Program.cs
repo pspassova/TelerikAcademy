@@ -57,6 +57,8 @@ namespace KnapsackProblem
                 }
             }
 
+            // TODO: FindOptimalProducts(costs);
+
             return costs[productsCount - 1, capacity];
         }
     }
