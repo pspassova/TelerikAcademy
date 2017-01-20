@@ -1,0 +1,20 @@
+﻿<div class="jumbotron">
+    @using (Html.BeginForm("Sum", "Sumator"))
+    {
+        <h2>Sum two valid numbers</h2>
+        <div class="panel-body">
+            <p>
+                <label for="FirstNumber" class="label label-primary">Enter a number:</label>
+                <input id="FirstNumber" name="FirstNumber" type="text" />
+            </p>
+            <p>
+                <label for="SecondNumber" class="label label-primary">Enter a number:</label>
+                <input id="SecondNumber" name="SecondNumber" type="text" />
+            </p>
+        </div>
+        <button type="submit">Sum numbers</button>
+        <br />
+        <h4>Result: </h4>
+        <h2 id="FinalSumResult">@ViewBag.Sum</h2>
+    }
+</div>
