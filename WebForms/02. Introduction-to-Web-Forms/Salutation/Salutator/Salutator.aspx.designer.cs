@@ -47,5 +47,23 @@ namespace Salutator {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label SalutationLabel;
+        
+        /// <summary>
+        /// HelloFromTheAspxCodeLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label HelloFromTheAspxCodeLabel;
+        
+        /// <summary>
+        /// HelloFromTheCsharpCodeLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label HelloFromTheCsharpCodeLabel;
     }
 }

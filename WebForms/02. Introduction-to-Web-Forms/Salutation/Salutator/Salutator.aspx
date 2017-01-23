@@ -8,6 +8,13 @@
         <p>
             <asp:Button ID="SubmitButton" runat="server" Text="Just click me!" OnClick="SubmitButton_Click" CssClass="btn btn-default" />
         </p>
-        <asp:Label ID="SalutationLabel" runat="server"></asp:Label>
+        <div class="jumbotron">
+            <p>
+                <asp:Label ID="SalutationLabel" runat="server"></asp:Label>
+            </p>
+            <asp:Label ID="HelloFromTheAspxCodeLabel" runat="server">This is the aspx code talking.</asp:Label>
+            <br />
+            <asp:Label ID="HelloFromTheCsharpCodeLabel" runat="server"></asp:Label>
+        </div>
     </div>
 </asp:Content>

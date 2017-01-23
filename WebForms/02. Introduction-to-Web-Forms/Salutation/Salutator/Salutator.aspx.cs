@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace Salutator
 {
@@ -11,7 +12,8 @@ namespace Salutator
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            this.SalutationLabel.Text = $"Hello, {this.NameTextBox.Text}!";
+            this.SalutationLabel.Text = $"Hello, { this.NameTextBox.Text }!";
+            this.HelloFromTheCsharpCodeLabel.Text = $"This is the cs code talking.\r\n Current assembly: { Assembly.GetExecutingAssembly().Location}.";
         }
     }
 }
