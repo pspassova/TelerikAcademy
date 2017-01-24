@@ -54,6 +54,7 @@
                         <li><a runat="server" href="~/Random">Random</a></li>
                         <li><a runat="server" href="~/Escaping">Escaping</a></li>
                         <li><a runat="server" href="~/StudentsAndCourses">Students and Courses</a></li>
+                        <li><a runat="server" href="~/WebCalculator">Web Calculator</a></li>
                     </ul>
                 </div>
             </div>

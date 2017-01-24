@@ -209,6 +209,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="WebCalculator.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Random.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -423,6 +424,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebCalculator.aspx.cs">
+      <DependentUpon>WebCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebCalculator.aspx.designer.cs">
+      <DependentUpon>WebCalculator.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
