@@ -1,0 +1,58 @@
+﻿<CATALOG>
+  <PLANT>
+    <COMMON>Bloodroot</COMMON>
+    <BOTANICAL>Sanguinaria canadensis</BOTANICAL>
+    <ZONE>4</ZONE>
+    <LIGHT>Mostly Shady</LIGHT>
+    <PRICE>$2.44</PRICE>
+    <AVAILABILITY>031599</AVAILABILITY>
+  </PLANT>
+  <PLANT>
+    <COMMON>Columbine</COMMON>
+    <BOTANICAL>Aquilegia canadensis</BOTANICAL>
+    <ZONE>3</ZONE>
+    <LIGHT>Mostly Shady</LIGHT>
+    <PRICE>$9.37</PRICE>
+    <AVAILABILITY>030699</AVAILABILITY>
+  </PLANT>
+  <PLANT>
+    <COMMON>Marsh Marigold</COMMON>
+    <BOTANICAL>Caltha palustris</BOTANICAL>
+    <ZONE>4</ZONE>
+    <LIGHT>Mostly Sunny</LIGHT>
+    <PRICE>$6.81</PRICE>
+    <AVAILABILITY>051799</AVAILABILITY>
+  </PLANT>
+  <PLANT>
+    <COMMON>Trout Lily</COMMON>
+    <BOTANICAL>Erythronium americanum</BOTANICAL>
+    <ZONE>4</ZONE>
+    <LIGHT>Shade</LIGHT>
+    <PRICE>$6.94</PRICE>
+    <AVAILABILITY>032499</AVAILABILITY>
+  </PLANT>
+  <PLANT>
+    <COMMON>Adder's-Tongue</COMMON>
+    <BOTANICAL>Erythronium americanum</BOTANICAL>
+    <ZONE>4</ZONE>
+    <LIGHT>Shade</LIGHT>
+    <PRICE>$9.58</PRICE>
+    <AVAILABILITY>041399</AVAILABILITY>
+  </PLANT>
+  <PLANT>
+    <COMMON>Butterfly Weed</COMMON>
+    <BOTANICAL>Asclepias tuberosa</BOTANICAL>
+    <ZONE>Annual</ZONE>
+    <LIGHT>Sunny</LIGHT>
+    <PRICE>$2.78</PRICE>
+    <AVAILABILITY>063099</AVAILABILITY>
+  </PLANT>
+  <PLANT>
+    <COMMON>Cinquefoil</COMMON>
+    <BOTANICAL>Potentilla</BOTANICAL>
+    <ZONE>Annual</ZONE>
+    <LIGHT>Shade</LIGHT>
+    <PRICE>$7.06</PRICE>
+    <AVAILABILITY>052599</AVAILABILITY>
+  </PLANT>
+</CATALOG>
