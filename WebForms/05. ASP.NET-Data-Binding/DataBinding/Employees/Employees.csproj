@@ -190,6 +190,8 @@
     <Content Include="Employees.aspx" />
     <Content Include="EmployeesDetails.aspx" />
     <Content Include="EmployeesFormView.aspx" />
+    <Content Include="EmployeesListView.aspx" />
+    <Content Include="EmployeesRepeter.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -247,6 +249,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="sources\plant-catalog.xml" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -296,6 +299,20 @@
     </Compile>
     <Compile Include="EmployeesFormView.aspx.designer.cs">
       <DependentUpon>EmployeesFormView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesListView.aspx.cs">
+      <DependentUpon>EmployeesListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeesListView.aspx.designer.cs">
+      <DependentUpon>EmployeesListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesRepeter.aspx.cs">
+      <DependentUpon>EmployeesRepeter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeesRepeter.aspx.designer.cs">
+      <DependentUpon>EmployeesRepeter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -362,7 +379,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

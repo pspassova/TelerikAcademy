@@ -9,15 +9,12 @@ namespace Employees
     public partial class EmployeesFormView : Page
     {
         private NorthwindEntities context = new NorthwindEntities();
-        private IList<Employee> employees;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!this.Page.IsPostBack)
             {
-                employees = context.Employees.ToList();
-
-                this.EmployeesGridview.DataSource = employees;
+                this.EmployeesGridview.DataSource = this.context.Employees.ToList();
                 this.DataBind();
             }
         }
