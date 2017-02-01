@@ -20,11 +20,7 @@ namespace XmlTree
             var selectedNode = this.XmlTreeView.SelectedNode;
             if (selectedNode.ChildNodes.Count == 0)
             {
-                this.InnerXmlLabel.Text = selectedNode.Value;
-            }
-            else
-            {
-                selectedNode.ToggleExpandState();
+                this.InnerXmlLabel.Text = $"{selectedNode.Text}: {selectedNode.Value}";
             }
         }
 

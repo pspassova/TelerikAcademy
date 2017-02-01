@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "Cars\Cars.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "Employees\Employees.csproj", "{C5E18E77-C477-4692-895B-7C950185EFE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlTree", "XmlTree\XmlTree.csproj", "{37D44963-E3B6-4952-BBAF-921F231F5B95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C5E18E77-C477-4692-895B-7C950185EFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5E18E77-C477-4692-895B-7C950185EFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5E18E77-C477-4692-895B-7C950185EFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D44963-E3B6-4952-BBAF-921F231F5B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D44963-E3B6-4952-BBAF-921F231F5B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D44963-E3B6-4952-BBAF-921F231F5B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D44963-E3B6-4952-BBAF-921F231F5B95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,18 +8,16 @@ namespace Employees
     {
         private const string EmployeesUrl = "Employees.aspx";
 
-        private NorthwindEntities context = new NorthwindEntities();
-
         protected void Page_Load(object sender, EventArgs e)
         {
             int employeeId;
-
             if (!int.TryParse(this.Request.Params["id"], out employeeId))
             {
                 this.Response.Redirect(EmployeesUrl);
             }
 
-            Employee employee = this.context.Employees.Find(employeeId);
+            NorthwindEntities context = new NorthwindEntities();
+            Employee employee = context.Employees.Find(employeeId);
             if (employee == null)
             {
                 this.Response.Redirect(EmployeesUrl);

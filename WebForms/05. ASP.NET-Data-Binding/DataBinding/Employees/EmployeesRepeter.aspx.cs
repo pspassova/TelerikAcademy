@@ -7,13 +7,14 @@ namespace Employees
 {
     public partial class EmployeesRepeter : Page
     {
-        private NorthwindEntities context = new NorthwindEntities();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!this.Page.IsPostBack)
             {
-                this.RepeaterEmployees.DataSource = this.context.Employees.ToList();
+                NorthwindEntities context = new NorthwindEntities();
+
+                this.RepeaterEmployees.DataSource = context.Employees.ToList();
                 this.RepeaterEmployees.DataBind();
             }
         }

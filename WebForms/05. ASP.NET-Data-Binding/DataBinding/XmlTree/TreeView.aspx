@@ -2,9 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
+        <asp:Label ID="InnerXmlLabel" runat="server" CssClass="label label-info"></asp:Label>
         <asp:XmlDataSource ID="XmlSource" DataFile="sources/plant-catalog.xml" runat="server"></asp:XmlDataSource>
         <asp:TreeView ID="XmlTreeView" DataSourceID="XmlSource" runat="server" OnTreeNodeDataBound="XmlTreeView_TreeNodeDataBound" OnSelectedNodeChanged="XmlSource_SelectedNodeChanged">
         </asp:TreeView>
-        <asp:Label ID="InnerXmlLabel" runat="server" CssClass="label label-info"></asp:Label>
     </div>
 </asp:Content>

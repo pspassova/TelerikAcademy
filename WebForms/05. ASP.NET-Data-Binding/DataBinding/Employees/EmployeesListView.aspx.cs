@@ -7,11 +7,11 @@ namespace Employees
 {
     public partial class EmployeesListView : Page
     {
-        private NorthwindEntities context = new NorthwindEntities();
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.EmployeesListview.DataSource = this.context.Employees.ToList();
+            NorthwindEntities context = new NorthwindEntities();
+
+            this.EmployeesListview.DataSource = context.Employees.ToList();
             this.EmployeesListview.DataBind();
         }
     }
