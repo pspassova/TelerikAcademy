@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+  <siteMapNode url="~/Home.aspx" title="Home"  description="Home">
+    <siteMapNode url="~/About.aspx" title="About" description="About"></siteMapNode>
+    <siteMapNode url="~/Contact.aspx" title="Contact" description="Contact"></siteMapNode>
+    <siteMapNode url="~/Offices/Offices.aspx" title="Offices" description="Offices' page">
+      <siteMapNode url="~/Offices/Bulgaria.aspx" title="Bulgaria" description="Offices in Bulgaria">
+        <siteMapNode url="~/Offices/Bulgarian/Sofia.aspx" title="Offices in Sofia" description="Offices in Sofia"></siteMapNode>
+        <siteMapNode url="~/Offices/Bulgarian/Plovdiv.aspx" title="Offices in Plovdiv" description="Offices in Plovdiv"></siteMapNode>
+        <siteMapNode url="~/Offices/Bulgarian/Varna.aspx" title="Offices in Varna" description="Offices in Varna"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Offices/England.aspx" title="England" description="Offices in England">
+        <siteMapNode url="~/Offices/English/London.aspx" title="Offices in London" description="Offices in London"></siteMapNode>
+        <siteMapNode url="~/Offices/English/Manchester.aspx" title="Offices in Manchester" description="Offices in Manchester"></siteMapNode>
+        <siteMapNode url="~/Offices/English/Bristol.aspx" title="Offices in Bristol" description="Offices in Bristol"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
