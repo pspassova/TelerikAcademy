@@ -231,6 +231,7 @@
     <Content Include="SessionObject.aspx" />
     <Content Include="Site.Master" />
     <Content Include="TestLoginCookie.aspx" />
+    <Content Include="UsersCountDatabase.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -308,6 +309,13 @@
     <Compile Include="TestLoginCookie.aspx.designer.cs">
       <DependentUpon>TestLoginCookie.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UsersCountDatabase.aspx.cs">
+      <DependentUpon>UsersCountDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersCountDatabase.aspx.designer.cs">
+      <DependentUpon>UsersCountDatabase.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -316,7 +324,16 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\StateManagement.Data\StateManagement.Data.csproj">
+      <Project>{3c26ee23-f23c-41a7-9063-1757ae992517}</Project>
+      <Name>StateManagement.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StateManagement.Models\StateManagement.Models.csproj">
+      <Project>{8dfc64e3-c64b-47ef-a795-f27fa602356e}</Project>
+      <Name>StateManagement.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

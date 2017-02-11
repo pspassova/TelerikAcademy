@@ -48,6 +48,7 @@
                         <li><a runat="server" href="~/TestLoginCookie">Test Login Cookie</a></li>
                         <li><a runat="server" href="~/DeletingViewState">Deleting ViewState</a></li>
                         <li><a runat="server" href="~/GraphicalCounter">Graphical Web Counter</a></li>
+                        <li><a runat="server" href="~/UsersCountDatabase">Users Count in SQL</a></li>
                     </ul>
                 </div>
             </div>

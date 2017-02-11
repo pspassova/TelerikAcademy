@@ -7,9 +7,10 @@ namespace StateManagement
 {
     public partial class GraphicalCounter : Page
     {
+        private static int visitorsCount = 1;
+
         protected override void OnPreLoad(EventArgs e)
         {
-            int visitorsCount = 0;
             if (this.Session["visits"] == null)
             {
                 this.Session["visits"] = 1;
