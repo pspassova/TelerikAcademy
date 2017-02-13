@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
-using System.Web.Script.Services;
 using System.Web.Services;
 using System.Web.UI;
 
@@ -14,6 +13,7 @@ namespace PhotoAlbum
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
         }
 
         [WebMethod]
@@ -36,8 +36,7 @@ namespace PhotoAlbum
                 {
                     Name = Path.GetFileNameWithoutExtension(file),
                     Description = $"{Path.GetFileNameWithoutExtension(file)} - description",
-                    ImagePath = $"~/{pathUri.MakeRelativeUri(filePathUri).ToString()}",
-                    Url = $"~/{pathUri.MakeRelativeUri(filePathUri).ToString()}"
+                    ImagePath = $"/{pathUri.MakeRelativeUri(filePathUri).ToString()}"
                 });
             }
 

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitChat.Models", "ChitChat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitChat.Data", "ChitChat.Data\ChitChat.Data.csproj", "{FABFFA43-267B-4836-858F-C0B90F7C8EB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoAlbum", "PhotoAlbum\PhotoAlbum.csproj", "{F5F94F56-5F79-440E-906B-B56A10215FEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoAlbum", "PhotoAlbum\PhotoAlbum.csproj", "{56A8AC74-2605-48E9-B972-D594C2E9776D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{FABFFA43-267B-4836-858F-C0B90F7C8EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FABFFA43-267B-4836-858F-C0B90F7C8EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FABFFA43-267B-4836-858F-C0B90F7C8EB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5F94F56-5F79-440E-906B-B56A10215FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5F94F56-5F79-440E-906B-B56A10215FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5F94F56-5F79-440E-906B-B56A10215FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5F94F56-5F79-440E-906B-B56A10215FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A8AC74-2605-48E9-B972-D594C2E9776D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A8AC74-2605-48E9-B972-D594C2E9776D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A8AC74-2605-48E9-B972-D594C2E9776D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A8AC74-2605-48E9-B972-D594C2E9776D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
