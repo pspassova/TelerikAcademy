@@ -276,9 +276,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ChitChat.Data\ChitChat.Data.csproj">
       <Project>{fabffa43-267b-4836-858f-c0b90f7c8eb4}</Project>
