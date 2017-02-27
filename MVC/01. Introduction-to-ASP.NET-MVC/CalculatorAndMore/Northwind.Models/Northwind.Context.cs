@@ -16,7 +16,7 @@ namespace Northwind.Models
     public partial class NorthwindEntities : DbContext
     {
         public NorthwindEntities()
-            : base("name=NorthwindEntities")
+            : base("NorthwindEntities")
         {
         }
     

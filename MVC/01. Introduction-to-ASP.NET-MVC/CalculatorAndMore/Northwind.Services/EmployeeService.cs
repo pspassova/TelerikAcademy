@@ -4,13 +4,19 @@ using Northwind.Models;
 
 namespace Northwind.Services
 {
-    public class EmployeeService : IEmployeeService
+    public class EmployeeService : IGenericService<Employee>
     {
-        private NorthwindEntities context = new NorthwindEntities();
-
         public IEnumerable<Employee> GetAll()
         {
-            return this.context.Employees;
+            return this.Context.Employees;
+        }
+
+        public NorthwindEntities Context
+        {
+            get
+            {
+                return new NorthwindEntities();
+            }
         }
     }
 }
