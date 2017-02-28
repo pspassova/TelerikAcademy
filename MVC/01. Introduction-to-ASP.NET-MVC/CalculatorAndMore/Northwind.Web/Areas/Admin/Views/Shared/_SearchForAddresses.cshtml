@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Northwind.Web.Models.EmployeeViewModel>
+@{
+    ViewBag.Title = "Search for addresses";
+}
+
+@using (Ajax.BeginForm("SearchForAddresses", null,
+                                        new AjaxOptions
+                                        {
+                                            UpdateTargetId = "results",
+                                            InsertionMode = InsertionMode.Replace,
+                                            HttpMethod = "POST"
+                                        }, new { id = "searchForm" }))
+{
+    <input type="text" name="query" />
+    <input type="submit" onclick="submitClick" />
+
+    <div id="results" class="col-md-5 col-md-offset-7">
+        @{Html.Partial("_AdditionalDetails", this.Model);}
+    </div>
+
+    <script>
+        function submitClick() {
+            $("#searchForm").submit();
+        }
+    </script>
+            }

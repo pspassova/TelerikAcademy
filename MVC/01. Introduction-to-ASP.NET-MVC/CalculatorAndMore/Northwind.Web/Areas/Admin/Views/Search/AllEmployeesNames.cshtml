@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Northwind.Web.Models.EmployeeViewModel>
+@{
+    ViewBag.Title = "AllEmployeesNames";
+}
+
+<h2>Search for an employee's address by its name</h2>
+
+<br />
+<div class="container">
+    <div class="col-md-5">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    @{Html.RenderPartial("_SearchForAddresses");}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach (var employee in this.Model)
+                    {
+                        <td class="text-center">@employee.FirstName @employee.LastName</td>
+                    }
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
