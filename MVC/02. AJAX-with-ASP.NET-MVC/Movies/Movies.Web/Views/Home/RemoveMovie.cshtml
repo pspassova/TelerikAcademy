@@ -1,0 +1,84 @@
+﻿@model Movies.Models.Movie
+
+@{
+    ViewBag.Title = "Remove movie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.HiddenFor(model => model.Id)
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Director)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadingMaleRole)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LeadingMaleRole)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadingFemaleRole)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LeadingFemaleRole)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadingMaleRoleAge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LeadingMaleRoleAge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadingFemaleRoleAge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LeadingFemaleRoleAge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Studio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Studio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StudioAddress)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions">
+            <input type="submit" value="Remove" onclick="alertSuccess()" class="btn btn-default" /> |
+            @Html.ActionLink("Back to movies list", "Index")
+        </div>
+    }
+</div>
+
+<script>
+    function alertSuccess() {
+        alert("The movie has been successfully removed.");
+    }
+</script>

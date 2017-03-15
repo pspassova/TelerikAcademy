@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Movies.Models.Movie>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="movies-container" class="well">
+    <h2>All movies</h2>
+
+    @foreach (var movie in this.Model)
+    {
+        <p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@movie.Title</td>
+                        <td>@movie.Year</td>
+                        <td>
+                            <button class="btn btn-warning">@Html.ActionLink("Edit", "EditMovie", "Home", movie)</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger">@Html.ActionLink("Remove", "RemoveMovie", "Home", movie)</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+    }
+</div>
